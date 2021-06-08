@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./custom.css">
+  <title>Finance Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading-bar">
+      <h1>Finance Calculator</h1>
+    </div>
+    
+    <section id="inputs" class="inputs">
+      <div class="row">
+        <div class="six columns">
+          <form id="invoice-section" class="invoice-section">
+            <h1>Invoice</h1>
+            <label for="invoice-date">Date</label>
+            <input type="date" class="invoice-date">
+            <label for="invoice-details">Details</label>
+            <input type="text" class="invoice-details">
+            <label for="invoice-amount">Amount</label>
+            <input type="number" class="invoice-amount">
+            <button class="invoice-btn">Add</button>
+          </form>
+        </div>
+        <div class="six columns">
+          <form id="remittance-section" class="remittance-section">
+            <h1>Remittance</h1>
+            <label for="remittance-date">Date</label>
+            <input type="date" class="remittance-date">
+            <label for="remittance-details">Details</label>
+            <input type="text" class="remittance-details">
+            <label for="remittance-amount">Amount</label>
+            <input type="number" class="remittance-amount">
+            <button class="remittance-btn">Add</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section id="output" class="output">
+      <div class="row">
+        <div class="six columns invoice-output">
+          <h1>Invoices</h1>
+          <ul class="invoice-list">
+            <!-- <li>Date:10/05/2021 | John Owes Finn £500 for Web work</li> -->
+          </ul>
+        </div>
+        <div class="six columns remittance-output">
+          <h1>Remittances</h1>
+          <ul class="remittance-list">
+            <!-- <li>Date:10/05/2021 | Tony paid John £250 for Marketing</li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="row">
+        <div class="one column">
+          <a href="http://jlt.digital">JLTDigital</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+    
+  <script src="./bundle.js"></script>
+</body>
+</html>
