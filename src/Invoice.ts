@@ -8,6 +8,6 @@ export class Invoice implements ReturnValue {
   ){}
 
   returnVal() {
-    return `${this.date}: ${this.amount} is owed to ${this.details}`
+    return `${this.date}: £${this.amount} is owed to ${this.details}`
   }
 }

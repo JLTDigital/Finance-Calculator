@@ -8,6 +8,6 @@ export class Remittance implements ReturnValue {
   ){}
 
   returnVal() {
-    return `${this.date}: ${this.amount} received from ${this.details}`
+    return `${this.date}: £${this.amount} received from ${this.details}`
   }
 }
